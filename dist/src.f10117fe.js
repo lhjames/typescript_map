@@ -100424,7 +100424,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.User = void 0; //We also need to do $npm install @types/faker (to install the type definition file)
 
-var faker_1 = __importDefault(require("faker"));
+var faker_1 = __importDefault(require("faker")); //This 'implement' helps TS show us errors (here, we tell it 'we want this class to be compatible with our Mappable interface)
+
 
 var User =
 /** @class */

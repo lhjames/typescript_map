@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { Mappable } from './CustomMap';
 
-//This 'implement' help TS helps us to detect errors
+//This 'implement' helps TS show us errors (here, we tell it 'we want this class to be compatible with our Mappable interface)
 export class Company implements Mappable {
   companyName: string; 
   catchPhrase: string; 
