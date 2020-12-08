@@ -1,7 +1,8 @@
 //We also need to do $npm install @types/faker (to install the type definition file)
-import faker from 'faker'; 
+import faker from 'faker';
+import { Mappable } from './CustomMap';
 
-export class User {
+export class User implements Mappable {
   name: string;
   location: {
     lat: number;

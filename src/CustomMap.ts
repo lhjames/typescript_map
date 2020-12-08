@@ -1,5 +1,6 @@
 //instructions to every other class on how they can be an argument to addMarker
-interface Mappable {
+//In order to be Mappable, a marker has to have a location and some content
+export interface Mappable {
   location: {
     lat: number,
     lng: number

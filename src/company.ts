@@ -1,6 +1,8 @@
-import faker from 'faker'; 
+import faker from 'faker';
+import { Mappable } from './CustomMap';
 
-export class Company {
+//This 'implement' help TS helps us to detect errors
+export class Company implements Mappable {
   companyName: string; 
   catchPhrase: string; 
   location: {
